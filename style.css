@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lato:wght@300;400&family=Merriweather+Sans:wght@300&family=Poppins:wght@300;900&display=swap');
+
+body{
+    background-color: #262626;
+}
+
+.mainwidget{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 650px;
+    height: 300px;
+    background-color: #313131;
+    border-radius: 7px;
+}
+
+.element-display{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    background-color: #262626;
+    width: 400px;
+    height: 150px;
+    border-radius: 7px;
+}
+
+.element-arrows{
+    position: absolute;
+    top: 15%;
+    left: 73%;
+    background-color:#262626;
+    width: 120px;
+    height: 70px;
+    border-radius: 7px;
+}
+
+.arrow-up{
+    border: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 48px;
+    height: 50px;
+    background-color: #313131;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.arrow-up:hover{
+    transform: translateY(-8px);    
+
+}
+
+.arrow-down{
+    border: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 63px;
+    width: 48px;
+    height: 50px;
+    background-color: #313131;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.arrow-down:hover{
+    transform: translateY(-8px);
+}
+
+.arrows{
+    height: 10px;
+    width: 14px;
+}
+
+.element-power{
+    position: absolute;
+    top: 42%;
+    left: 73%;
+    width: 120px;
+    height: 70px;
+    background-color: #262626;
+    border-radius: 7px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 75%;
+    left: 7%;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider-widget {    
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  position: absolute;
+  left: 25%;
+  top: 75%;
+  height: 10px;
+  border-radius: 5px;  
+  width: 66%; /* Full-width */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider-widget:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider-widget::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius: 50%; 
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #2196F3; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider-widget::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  border-radius: 50%;
+  height: 25px; /* Slider handle height */
+  background: #2196F3; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.element-power {   
+    position: absolute;
+    top: 42%;
+    left: 73%;
+    background-color:#262626;
+    width: 120px;
+    height: 70px;
+    border-radius: 7px;
+}
+
+
+.onoff {    
+    background-color: #313131; 
+    position: absolute;
+    top: 11%;
+    left: 6%;
+    width: 105px;
+    height: 55px;   
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.onoff:hover{
+    transform: translateY(-6px);  
+}
+
+
+.off {
+    height: 10px;
+    width: 10px;
+}
+
+span {
+    position: absolute;
+    margin: 0;
+    top: 15%;
+    left: 42%;
+    font-size: 90px;
+    color:antiquewhite;
+    font-family: 'Akshar', sans-serif;
+}
+
+p {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Akshar', sans-serif;
+}
+
+#clock {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    height: 60 px;
+    width: 60px;
+}
+
+
+/* Animations with hover */
+.mainwidget{
+    box-shadow: 5px 10px 8px #888888;
+    transition: all ease-in-out 0.3s;
+}
+
+.mainwidget:hover{
+    box-shadow: 1px 1px 25px 1px rgba(255, 205, 205, 2);
+    transform: translateY(-10px);    
+}
+
+
+.element-display{
+    box-shadow: 5px 10px 8px #888888;
+}
+
+

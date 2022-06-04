@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="style.css">    
+    <title>Widget</title>
+</head>
+<body>
+
+    <div class="mainwidget" id="mainwidget">
+
+        <!-- Off-On -->
+        <div class="element-power">           
+            <button class="onoff" id="onoff-btn" ><img src="./imgs/white-off.png" class="off"  id="img">  PW</button>           
+        </div>
+
+        <!-- Display -->
+        <div class="element-display">
+            <img src="./imgs/clock.png" alt="" id="clock"><span id="demo">0</span><p id="hours-mins">Hrs</p>
+        </div>
+
+        <!-- Arrow buttons -->
+        <div class="element-arrows">
+            <button class="arrow-up" id="add-btn"><img src="./imgs/arrow up.png" class="arrows"></button>
+            <button class="arrow-down" id="subtract-btn" ><img src="./imgs/arrow down.png" class="arrows" alt=""> </button>
+        </div>
+        
+        <!-- Slider -->
+        <div class="slidecontainer">
+            <input type="range" min="0" max="10" value="0" step="0.10" class="slider-widget" id="myRange">            
+        </div>        
+
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox" id="toggle-btn">
+            <span class="slider round" ></span>
+        </label>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
